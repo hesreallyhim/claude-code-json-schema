@@ -1,0 +1,20 @@
+{
+  "name": "cc-schema-plugins",
+  "owner": {
+    "name": "Really Him",
+    "url": "https://github.com/hesreallyhim"
+  },
+  "metadata": {
+    "description": "Skills used for the maintenance of the Claude Code unofficial JSON Schema repository."
+  },
+  "plugins": [
+    {
+      "name": "ajv-strict-schema-doctor",
+      "source": "./ajv-strict-schema-doctor",
+      "description": "Skill for parsing and repairing problems related to the ajv library.",
+      "homepage": "https://github.com/hesreallyhim/claude-code-json-schema",
+      "repository": "https://github.com/hesreallyhim/claude-code-json-schema",
+      "license": "MIT"
+    }
+  ]
+}

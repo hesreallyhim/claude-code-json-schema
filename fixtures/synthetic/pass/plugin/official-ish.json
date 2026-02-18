@@ -1,0 +1,28 @@
+{
+  "name": "enterprise-devops",
+  "version": "2.3.1",
+  "description": "Comprehensive DevOps automation",
+  "author": {
+    "name": "DevOps Platform Team",
+    "email": "devops@example.com",
+    "url": "https://example.com/team/devops"
+  },
+  "homepage": "https://docs.example.com/plugins/devops",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/company/devops-plugin.git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "devops",
+    "ci-cd",
+    "kubernetes"
+  ],
+  "commands": [
+    "./commands/ci",
+    "./commands/admin"
+  ],
+  "agents": "./agents/specialized",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

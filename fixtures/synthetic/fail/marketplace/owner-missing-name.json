@@ -1,0 +1,12 @@
+{
+  "name": "my-plugins",
+  "owner": {
+    "url": "https://example.com"
+  },
+  "plugins": [
+    {
+      "name": "review-plugin",
+      "source": "./plugins/review-plugin"
+    }
+  ]
+}

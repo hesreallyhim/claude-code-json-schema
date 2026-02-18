@@ -1,0 +1,243 @@
+{
+  "checkedAt": "2026-02-18",
+  "purpose": "Fixture-level assertion provenance map. Informational, not normative.",
+  "sourceRefs": {
+    "pluginsReference": {
+      "url": "https://code.claude.com/docs/en/plugins-reference",
+      "snapshot": "official-docs/code.claude.com_docs_en_plugins-reference.md.txt"
+    },
+    "pluginMarketplaces": {
+      "url": "https://code.claude.com/docs/en/plugin-marketplaces",
+      "snapshot": "official-docs/code.claude.com_docs_en_plugin-marketplaces.md.txt"
+    },
+    "cliDeviationLog": {
+      "path": "docs/CLI-DEVIATION-EVIDENCE.md"
+    }
+  },
+  "fixtures": [
+    {
+      "file": "fixtures/synthetic/pass/plugin/minimal.json",
+      "kind": "plugin",
+      "expected": "pass",
+      "classification": "documented",
+      "assertion": "If plugin manifest is present, `name` alone is sufficient.",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Required fields section says `name` is the only required field."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/pass/plugin/official-ish.json",
+      "kind": "plugin",
+      "expected": "pass",
+      "classification": "probe",
+      "assertion": "Complex manifest forms accepted by schema are tracked against CLI behavior.",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Plugin manifest sections document these field families and component path fields."
+        },
+        {
+          "ref": "cliDeviationLog",
+          "note": "Current CLI rejects this fixture (`repository`/`agents`) despite schema pass."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/pass/plugin/version-allows-prerelease-semver.json",
+      "kind": "plugin",
+      "expected": "pass",
+      "classification": "inferred",
+      "assertion": "Plugin `version` allows semver prerelease identifiers (for example `-beta.1`).",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Version field is documented as semantic version; prerelease identifiers are a standard semantic-version form."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/pass/marketplace/basic.json",
+      "kind": "marketplace",
+      "expected": "pass",
+      "classification": "documented",
+      "assertion": "Minimal marketplace with `name`, `owner.name`, and one plugin (`name` + `source`) is valid.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Marketplace required fields and walkthrough example use this shape."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/plugin/name-must-be-kebab-case.json",
+      "kind": "plugin",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Plugin `name` must be kebab-case (no spaces, lowercase-hyphen form).",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Required field docs describe plugin `name` as kebab-case with no spaces."
+        },
+        {
+          "ref": "cliDeviationLog",
+          "note": "Current CLI accepts camelCase plugin names for this fixture."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/plugin/version-must-be-semver.json",
+      "kind": "plugin",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Plugin `version` should follow semantic versioning.",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Version field is documented as semantic version."
+        },
+        {
+          "ref": "cliDeviationLog",
+          "note": "Current CLI accepts `1.0` in this fixture."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/plugin/no-additional-top-level-properties.json",
+      "kind": "plugin",
+      "expected": "fail",
+      "classification": "synthetic",
+      "assertion": "Unknown top-level plugin properties are rejected.",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Manifest section says it documents supported fields/options; schema treats extras as out of contract."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/plugin/path-must-start-dot-slash.json",
+      "kind": "plugin",
+      "expected": "fail",
+      "classification": "inferred",
+      "assertion": "String component paths should be explicit plugin-relative paths (`./...`).",
+      "evidence": [
+        {
+          "ref": "pluginsReference",
+          "note": "Component path fields are path-based and examples consistently use plugin-relative paths."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/missing-owner.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Marketplace requires `owner`.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Marketplace required fields list `owner`."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/owner-missing-name.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "`owner.name` is required.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Owner fields table marks `name` as required."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/plugins-must-be-array.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Marketplace `plugins` must be an array.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Required fields table specifies `plugins` type as array."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/name-must-be-kebab-case.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Marketplace `name` must be kebab-case (no spaces).",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Marketplace name is documented as kebab-case with no spaces."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/plugin-name-must-be-kebab-case.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Plugin entry `name` in marketplace should be kebab-case (no spaces).",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Plugin entry required field `name` is documented as kebab-case with no spaces."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/plugin-source-must-start-dot-slash.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "Relative plugin sources must start with `./`.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Plugin sources table says relative path sources must start with `./`."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/github-sha-must-be-40-hex.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "documented",
+      "assertion": "GitHub source `sha` must be a full 40-character commit hash.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "GitHub source table describes `sha` as full 40-character commit SHA."
+        }
+      ]
+    },
+    {
+      "file": "fixtures/synthetic/fail/marketplace/no-additional-top-level-properties.json",
+      "kind": "marketplace",
+      "expected": "fail",
+      "classification": "synthetic",
+      "assertion": "Unknown top-level marketplace properties are rejected.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Docs enumerate available marketplace fields; this schema treats extras as out of contract."
+        },
+        {
+          "ref": "cliDeviationLog",
+          "note": "Current CLI accepts additional top-level marketplace properties."
+        }
+      ]
+    }
+  ]
+}

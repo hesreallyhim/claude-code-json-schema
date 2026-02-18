@@ -1,0 +1,17 @@
+{
+  "name": "ajv-strict-schema-doctor",
+  "description": "Skill for debugging and repairing problems related to schema validation and the ajv library",
+  "author": {
+    "name": "Really Him"
+  },
+  "version": "1.0.0-beta.1",
+  "homepage": "https://github.com/hesreallyhim/claude-code-json-schema",
+  "repository": "https://github.com/hesreallyhim/claude-code-json-schema",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "json-schema",
+    "validation",
+    "marketplace"
+  ]
+}

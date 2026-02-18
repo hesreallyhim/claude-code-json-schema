@@ -1,0 +1,9 @@
+{
+  "name": "my-plugins",
+  "plugins": [
+    {
+      "name": "review-plugin",
+      "source": "./plugins/review-plugin"
+    }
+  ]
+}

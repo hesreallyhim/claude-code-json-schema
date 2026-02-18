@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/plugin.json"
+      ],
+      "url": "./schemas/plugin.schema.json"
+    },
+    {
+      "fileMatch": [
+        "**/marketplace.json"
+      ],
+      "url": "./schemas/marketplace.schema.json"
+    }
+  ]
+}

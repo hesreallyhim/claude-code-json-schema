@@ -1,0 +1,24 @@
+{
+  "name": "claude-code-json-schema",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cc-schema-lint": "bin/claude-code-schema-lint.mjs"
+  },
+  "author": "Really Him",
+  "license": "MIT",
+  "description": "Unofficial JSON Schema definitions for Claude Code, including plugins and marketplaces",
+  "scripts": {
+    "compile": "node tools/compile-schemas.mjs",
+    "validate:fixtures": "node tools/validate-fixtures.mjs",
+    "validate:fixtures:claude": "node tools/validate-fixtures-claude.mjs",
+    "monitor:fetch": "node tools/fetch-upstream.mjs",
+    "test": "node tools/compile-schemas.mjs && node tools/validate-fixtures.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "fast-glob": "^3.3.3"
+  }
+}

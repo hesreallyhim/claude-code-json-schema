@@ -1,0 +1,12 @@
+{
+  "name": "my-plugins",
+  "owner": {
+    "name": "Team"
+  },
+  "plugins": [
+    {
+      "name": "Review Plugin",
+      "source": "./plugins/review-plugin"
+    }
+  ]
+}

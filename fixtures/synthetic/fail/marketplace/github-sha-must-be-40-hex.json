@@ -1,0 +1,16 @@
+{
+  "name": "my-plugins",
+  "owner": {
+    "name": "Team"
+  },
+  "plugins": [
+    {
+      "name": "review-plugin",
+      "source": {
+        "source": "github",
+        "repo": "org/repo",
+        "sha": "abc123"
+      }
+    }
+  ]
+}

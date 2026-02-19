@@ -17,8 +17,10 @@
     "test": "node tools/compile-schemas.mjs && node tools/validate-fixtures.mjs"
   },
   "devDependencies": {
-    "ajv": "^8.18.0",
-    "ajv-formats": "^3.0.1",
     "fast-glob": "^3.3.3"
+  },
+  "dependencies": {
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1"
   }
 }

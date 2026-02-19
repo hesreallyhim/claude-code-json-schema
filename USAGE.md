@@ -57,10 +57,6 @@ Main branch URLs:
 - `https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/main/schemas/plugin.schema.json`
 - `https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/main/schemas/marketplace.schema.json`
 
-Tag-pinned URLs for reproducible builds:
-
-- `https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/vX.Y.Z/schemas/plugin.schema.json`
-- `https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/vX.Y.Z/schemas/marketplace.schema.json`
 
 ## 3) Using `$schema` In Manifest Files
 
@@ -77,26 +73,21 @@ Tag-pinned URLs for reproducible builds:
 Validate a directory recursively:
 
 ```bash
-npx github:hesreallyhim/claude-code-json-schema cc-schema-lint /path/to/project
+npx github:hesreallyhim/claude-code-json-schema /path/to/project
 ```
 
 Validate a specific plugin manifest:
 
 ```bash
-npx github:hesreallyhim/claude-code-json-schema cc-schema-lint --plugin /path/to/.claude-plugin/plugin.json
+npx github:hesreallyhim/claude-code-json-schema --plugin /path/to/.claude-plugin/plugin.json
 ```
 
 Validate a specific marketplace manifest:
 
 ```bash
-npx github:hesreallyhim/claude-code-json-schema cc-schema-lint --marketplace /path/to/.claude-plugin/marketplace.json
+npx github:hesreallyhim/claude-code-json-schema --marketplace /path/to/.claude-plugin/marketplace.json
 ```
 
-Tag-pinned invocation:
-
-```bash
-npx github:hesreallyhim/claude-code-json-schema#vX.Y.Z cc-schema-lint /path/to/project
-```
 
 ## 5) Repo-Local Manifest Lint Command
 

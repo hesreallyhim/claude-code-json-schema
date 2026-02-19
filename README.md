@@ -19,7 +19,7 @@ For linting:
 
 ```bash
 # I recommend assigning an alias to this:
-npx github:hesreallyhim/claude-code-json-schema cc-schema-lint /path/to/project
+npx github:hesreallyhim/claude-code-json-schema /path/to/project
 ```
 
 ## IDE integration

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schemas.example.invalid/claude-code/marketplace.unofficial.schema.json",
+  "$id": "https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/main/schemas/marketplace.schema.json",
   "title": "Claude Code Marketplace Catalog (.claude-plugin/marketplace.json) - unofficial best-effort schema",
   "type": "object",
   "additionalProperties": false,

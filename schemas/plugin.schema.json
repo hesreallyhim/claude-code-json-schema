@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://schemas.example.invalid/claude-code/plugin.unofficial.schema.json",
+  "$id": "https://raw.githubusercontent.com/hesreallyhim/claude-code-json-schema/main/schemas/plugin.schema.json",
   "title": "Claude Code Plugin Manifest (.claude-plugin/plugin.json) - unofficial best-effort schema",
   "type": "object",
   "additionalProperties": false,

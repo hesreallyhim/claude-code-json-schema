@@ -87,8 +87,6 @@ Validate a specific marketplace manifest:
 ```bash
 npx github:hesreallyhim/claude-code-json-schema --marketplace /path/to/.claude-plugin/marketplace.json
 ```
-
-
 ## 5) Repo-Local Manifest Lint Command
 
 From this repository:

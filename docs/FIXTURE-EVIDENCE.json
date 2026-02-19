@@ -48,7 +48,7 @@
         }
       ],
       "cliEnforcementCode": 1,
-      "notes": "CLI currently accepts camelCase plugin names.",
+      "notes": "CLI currently validates camelCase plugin names as pass.",
       "evidence": [
         {
           "ref": "pluginsReference",
@@ -77,7 +77,7 @@
         }
       ],
       "cliEnforcementCode": 1,
-      "notes": "CLI currently accepts non-semver values such as `1.0`.",
+      "notes": "CLI currently validates non-semver values such as `1.0` as pass.",
       "evidence": [
         {
           "ref": "pluginsReference",
@@ -384,7 +384,7 @@
         }
       ],
       "cliEnforcementCode": 1,
-      "notes": "CLI currently accepts unknown top-level marketplace properties.",
+      "notes": "CLI currently validates unknown top-level marketplace properties as pass.",
       "evidence": [
         {
           "ref": "pluginMarketplaces",

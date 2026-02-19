@@ -42,9 +42,9 @@ Synthetic fixtures in `fixtures/synthetic/` verify schema behavior:
 
 Observed mismatches between this schema set and current `claude plugin validate` behavior include:
 
-- CLI accepts non-semver versions such as `1.0`.
-- CLI accepts plugin names outside documented kebab-case format (`name-must-be-kebab-case` fixture mismatch).
-- CLI accepts additional top-level properties in `marketplace.json` that this schema rejects.
+- CLI validates non-semver versions such as `1.0` as pass.
+- CLI validates plugin names outside documented kebab-case format as pass (`name-must-be-kebab-case` fixture mismatch).
+- CLI validates additional top-level properties in `marketplace.json` as pass where this schema rejects them.
 - CLI currently rejects some schema-accepted plugin forms (for example `repository` object + certain `agents` values in `official-ish.json`).
 
 These are tracked as implementation observations, not as alternate public contracts.

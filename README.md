@@ -35,7 +35,8 @@ Synthetic fixtures in `fixtures/synthetic/` verify schema behavior:
 
 - `pass/` fixtures must validate
 - `fail/` fixtures must fail validation
-- Fixture-level provenance map: `docs/FIXTURE-EVIDENCE.json`
+- Canonical machine-readable map: `docs/FIXTURE-EVIDENCE.json`
+- Human-readable summary: `docs/FIXTURE-EVIDENCE.md`
 
 ## Known Deviations (Current)
 
@@ -58,7 +59,7 @@ See [`docs/SYNC-AND-PRIVACY.md`](./docs/SYNC-AND-PRIVACY.md).
 
 ## Notes
 
-See [`docs/NOTES.md`](./docs/NOTES.md) and [`CHANGELOG.md`](./CHANGELOG.md).
+See [`docs/FIXTURE-EVIDENCE.md`](./docs/FIXTURE-EVIDENCE.md), [`docs/FIXTURE-EVIDENCE.json`](./docs/FIXTURE-EVIDENCE.json), and [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## Third-party notices
 

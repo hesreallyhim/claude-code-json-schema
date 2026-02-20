@@ -88,6 +88,10 @@ Goal:
 - [ ] Implement deterministic generation of README Known Deviations prose from mappings + evidence.
 - [ ] Add CI guard for generated deviation content drift.
 
+Current progress:
+
+- Item 86 started: explicit golden baseline fixtures introduced under `fixtures/synthetic/golden/` with staged migration design documented.
+
 Acceptance criteria:
 
 - Every generated deviation sentence is traceable to condition/assertion evidence.

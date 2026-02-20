@@ -91,6 +91,7 @@ Goal:
 Current progress:
 
 - Item 86 started: explicit golden baseline fixtures introduced under `fixtures/synthetic/golden/` with staged migration design documented.
+- Item 87 started: initial matrix integrity checker added (`check:assertion-matrix`) for evidence-to-mapping coverage and fixture path existence.
 
 Acceptance criteria:
 

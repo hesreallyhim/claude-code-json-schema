@@ -67,7 +67,7 @@ Acceptance criteria:
 
 ## Item: `sync-deviations`
 
-Status: `proposed`
+Status: `accepted`
 
 Goal:
 
@@ -78,7 +78,7 @@ Goal:
 - [x] Define a fixture/assertion-to-English mapping document format.
 - [x] Define condition-level aggregation rules from assertion outcomes.
 - [x] Define how to express incomplete coverage (`uncertain`/`inconclusive`) in generated prose.
-- [ ] Define review/approval policy for generated English text changes.
+- [x] Define review/approval policy for generated English text changes.
 
 ### Candidate implementation tasks (post-acceptance)
 

@@ -77,7 +77,7 @@ Goal:
 
 - [x] Define a fixture/assertion-to-English mapping document format.
 - [x] Define condition-level aggregation rules from assertion outcomes.
-- [ ] Define how to express incomplete coverage (`uncertain`/`inconclusive`) in generated prose.
+- [x] Define how to express incomplete coverage (`uncertain`/`inconclusive`) in generated prose.
 - [ ] Define review/approval policy for generated English text changes.
 
 ### Candidate implementation tasks (post-acceptance)

@@ -75,7 +75,7 @@ Goal:
 
 ### To move from `proposed` to `accepted`
 
-- [ ] Define a fixture/assertion-to-English mapping document format.
+- [x] Define a fixture/assertion-to-English mapping document format.
 - [ ] Define condition-level aggregation rules from assertion outcomes.
 - [ ] Define how to express incomplete coverage (`uncertain`/`inconclusive`) in generated prose.
 - [ ] Define review/approval policy for generated English text changes.

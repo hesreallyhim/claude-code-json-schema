@@ -31,12 +31,12 @@ Goal:
 
 Required tasks:
 
-- [ ] Keep `validate:fixtures` as contract CI (blocking).
-- [ ] Add a separate CLI observation workflow (`validate:fixtures:claude`).
-- [ ] Configure scheduled execution for drift detection.
-- [ ] Implement issue upsert/update behavior on failure.
-- [ ] Keep scheduled CLI observation runs non-blocking.
-- [ ] Add workflow badges to README only after workflows exist and are stable.
+- [x] Keep `validate:fixtures` as contract CI (blocking).
+- [x] Add a separate CLI observation workflow (`validate:fixtures:claude`).
+- [x] Configure scheduled execution for drift detection.
+- [x] Implement issue upsert/update behavior on failure.
+- [x] Keep scheduled CLI observation runs non-blocking.
+- [x] Add workflow badges to README only after workflows exist and are stable.
 
 Clarification:
 

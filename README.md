@@ -1,5 +1,8 @@
 # claude-code-json-schema
 
+[![Contract CI](https://github.com/hesreallyhim/claude-code-json-schema/actions/workflows/ci.yml/badge.svg)](https://github.com/hesreallyhim/claude-code-json-schema/actions/workflows/ci.yml)
+[![CLI Drift Beacon](https://github.com/hesreallyhim/claude-code-json-schema/actions/workflows/cli-observation.yml/badge.svg)](https://github.com/hesreallyhim/claude-code-json-schema/actions/workflows/cli-observation.yml)
+
 Unofficial but really actually quite good JSON Schemas for Claude Code manifest files like `plugin.json` and `marketplace.json`. Intended to support developer tooling, plugin authors, and IDE integrations.
 
 This project is not an authoritative specification and is not endorsed by, or affiliated with, or funded by, or probably even noticed by Anthropic PBC. It's partly a result of a sleepless night failing miserably to publish a plugin. Nevertheless, I think Codex did a pretty good job with it, and a best effort is made to ensure it's up to date with current documentation and the Claude Code application itself.

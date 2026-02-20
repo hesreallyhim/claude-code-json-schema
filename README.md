@@ -41,6 +41,20 @@ Synthetic fixtures in `fixtures/synthetic/` verify schema behavior:
 - Canonical machine-readable map: `docs/FIXTURE-EVIDENCE.json`
 - Human-readable summary: `docs/FIXTURE-EVIDENCE.md`
 
+## Checks and Signals
+
+- `Contract CI` validates fixtures against schemas (`npm run validate:fixtures`).
+- `CLI Drift Beacon` runs fixture expectations against `claude plugin validate` and raises drift signals.
+- `Deviations Metadata Check` verifies the metadata context line in Known Deviations.
+
+Metadata-only sync command:
+
+```bash
+npm run sync:deviations-metadata
+```
+
+Detailed design: [`docs/CHECKS-AND-SIGNALS.md`](./docs/CHECKS-AND-SIGNALS.md).
+
 ## Known Deviations (Current)
 
 Observed mismatches between this schema set and current `claude plugin validate` behavior include:
@@ -66,7 +80,7 @@ See [`docs/SYNC-AND-PRIVACY.md`](./docs/SYNC-AND-PRIVACY.md).
 
 ## Notes
 
-See [`docs/FIXTURE-EVIDENCE.md`](./docs/FIXTURE-EVIDENCE.md), [`docs/FIXTURE-EVIDENCE.json`](./docs/FIXTURE-EVIDENCE.json), and [`CHANGELOG.md`](./CHANGELOG.md).
+See [`docs/FIXTURE-EVIDENCE.md`](./docs/FIXTURE-EVIDENCE.md), [`docs/FIXTURE-EVIDENCE.json`](./docs/FIXTURE-EVIDENCE.json), [`docs/CHECKS-AND-SIGNALS.md`](./docs/CHECKS-AND-SIGNALS.md), and [`CHANGELOG.md`](./CHANGELOG.md).
 
 ## Third-party notices
 

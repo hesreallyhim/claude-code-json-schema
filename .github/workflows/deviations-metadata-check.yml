@@ -1,0 +1,27 @@
+name: Deviations Metadata Check
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "schemas/**"
+      - "docs/FIXTURE-EVIDENCE.json"
+      - "package.json"
+      - "package-lock.json"
+      - "tools/sync-deviations-metadata.mjs"
+      - ".github/workflows/deviations-metadata-check.yml"
+
+jobs:
+  metadata-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: npm ci
+
+      - name: Verify Known Deviations metadata
+        run: npm run sync:deviations-metadata -- --check

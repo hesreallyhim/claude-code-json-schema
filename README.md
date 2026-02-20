@@ -45,6 +45,10 @@ Synthetic fixtures in `fixtures/synthetic/` verify schema behavior:
 
 Observed mismatches between this schema set and current `claude plugin validate` behavior include:
 
+<!-- sync-deviations-metadata:start -->
+_As of 2026-02-18 | CLI 2.1.44 (Claude Code) | Schema v1.0.0 | Repo 5bbbe2a_
+<!-- sync-deviations-metadata:end -->
+
 - CLI validates non-semver versions such as `1.0` as pass.
 - CLI validates plugin names outside documented kebab-case format as pass (`name-must-be-kebab-case` fixture mismatch).
 - CLI validates additional top-level properties in `marketplace.json` as pass where this schema rejects them.

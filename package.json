@@ -13,6 +13,7 @@
     "compile": "node tools/compile-schemas.mjs",
     "validate:fixtures": "node tools/validate-fixtures.mjs",
     "validate:fixtures:claude": "node tools/validate-fixtures-claude.mjs",
+    "sync:deviations-metadata": "node tools/sync-deviations-metadata.mjs",
     "monitor:fetch": "node tools/fetch-upstream.mjs",
     "test": "node tools/compile-schemas.mjs && node tools/validate-fixtures.mjs"
   },

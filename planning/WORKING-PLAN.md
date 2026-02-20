@@ -20,7 +20,7 @@ State policy:
 
 ## Item: `sync-deviations-metadata`
 
-Status: `accepted`
+Status: `implemented`
 
 Goal:
 
@@ -45,14 +45,19 @@ Clarification:
 
 ### Implementation task list (after prerequisite)
 
-- [ ] Define `DATE` source as `docs/FIXTURE-EVIDENCE.json` (`sourceRefs.cliRun.checkedAt`).
-- [ ] Define `CLI VERSION` source as `docs/FIXTURE-EVIDENCE.json` (`sourceRefs.cliRun.cliVersion`).
-- [ ] Define `SCHEMA VERSION` source as `package.json` version (unless replaced by explicit schema version field).
-- [ ] Define `REPO SHA` source as current commit (`git rev-parse --short HEAD`).
-- [ ] Add metadata markers in README under Known Deviations.
-- [ ] Add `tools/sync-deviations-metadata.mjs` to update metadata markers only.
-- [ ] Add npm script for metadata sync.
-- [ ] Add CI check that fails if metadata markers are stale in PRs touching evidence/schema/README.
+- [x] Define `DATE` source as `docs/FIXTURE-EVIDENCE.json` (`sourceRefs.cliRun.checkedAt`).
+- [x] Define `CLI VERSION` source as `docs/FIXTURE-EVIDENCE.json` (`sourceRefs.cliRun.cliVersion`).
+- [x] Define `SCHEMA VERSION` source as `package.json` version (unless replaced by explicit schema version field).
+- [x] Define `REPO SHA` source as current commit (`git rev-parse --short HEAD`).
+- [x] Add metadata markers in README under Known Deviations.
+- [x] Add `tools/sync-deviations-metadata.mjs` to update metadata markers only.
+- [x] Add npm script for metadata sync.
+- [x] Add CI check that fails if metadata markers are stale in PRs touching evidence/schema/README.
+
+Implementation note:
+
+- CI check enforces `DATE`, `CLI VERSION`, and `SCHEMA VERSION` source alignment and metadata marker shape.
+- `REPO SHA` is maintained by the sync command as informational metadata.
 
 Acceptance criteria:
 

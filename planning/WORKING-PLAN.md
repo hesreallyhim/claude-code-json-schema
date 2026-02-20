@@ -67,7 +67,7 @@ Acceptance criteria:
 
 ## Item: `sync-deviations`
 
-Status: `accepted`
+Status: `in-development`
 
 Goal:
 
@@ -82,7 +82,7 @@ Goal:
 
 ### Candidate implementation tasks (post-acceptance)
 
-- [ ] Create mapping artifact (assertion IDs and fixture names -> English sentences).
+- [x] Create mapping artifact (assertion IDs and fixture names -> English sentences).
 - [ ] Introduce golden fixtures and minimal-delta assertion fixtures per condition.
 - [ ] Add matrix/generator support to ensure each assertion has a targeted fixture probe.
 - [ ] Implement deterministic generation of README Known Deviations prose from mappings + evidence.

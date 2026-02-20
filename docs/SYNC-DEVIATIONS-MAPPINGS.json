@@ -1,0 +1,248 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-02-20T21:46:41.853Z",
+  "schemaVersion": "1.0.0",
+  "evidenceCheckedAt": "2026-02-18",
+  "mappings": [
+    {
+      "mappingId": "marketplace-github-sha-40hex.bad.github-sha-must-be-40-hex",
+      "conditionId": "marketplace-github-sha-40hex",
+      "assertionId": "bad.github-sha-must-be-40-hex",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/github-sha-must-be-40-hex.json",
+      "fixtureName": "github-sha-must-be-40-hex",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/github-sha-must-be-40-hex.json` should fail validation for condition `marketplace-github-sha-40hex`."
+    },
+    {
+      "mappingId": "marketplace-github-sha-40hex.good.basic",
+      "conditionId": "marketplace-github-sha-40hex",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-github-sha-40hex`."
+    },
+    {
+      "mappingId": "marketplace-name-kebab-case.bad.name-must-be-kebab-case",
+      "conditionId": "marketplace-name-kebab-case",
+      "assertionId": "bad.name-must-be-kebab-case",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/name-must-be-kebab-case.json",
+      "fixtureName": "name-must-be-kebab-case",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/name-must-be-kebab-case.json` should fail validation for condition `marketplace-name-kebab-case`."
+    },
+    {
+      "mappingId": "marketplace-name-kebab-case.good.basic",
+      "conditionId": "marketplace-name-kebab-case",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-name-kebab-case`."
+    },
+    {
+      "mappingId": "marketplace-owner-name-required.bad.owner-missing-name",
+      "conditionId": "marketplace-owner-name-required",
+      "assertionId": "bad.owner-missing-name",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/owner-missing-name.json",
+      "fixtureName": "owner-missing-name",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/owner-missing-name.json` should fail validation for condition `marketplace-owner-name-required`."
+    },
+    {
+      "mappingId": "marketplace-owner-name-required.good.basic",
+      "conditionId": "marketplace-owner-name-required",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-owner-name-required`."
+    },
+    {
+      "mappingId": "marketplace-owner-required.bad.missing-owner",
+      "conditionId": "marketplace-owner-required",
+      "assertionId": "bad.missing-owner",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/missing-owner.json",
+      "fixtureName": "missing-owner",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/missing-owner.json` should fail validation for condition `marketplace-owner-required`."
+    },
+    {
+      "mappingId": "marketplace-owner-required.good.basic",
+      "conditionId": "marketplace-owner-required",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-owner-required`."
+    },
+    {
+      "mappingId": "marketplace-plugin-name-kebab-case.bad.plugin-name-must-be-kebab-case",
+      "conditionId": "marketplace-plugin-name-kebab-case",
+      "assertionId": "bad.plugin-name-must-be-kebab-case",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/plugin-name-must-be-kebab-case.json",
+      "fixtureName": "plugin-name-must-be-kebab-case",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/plugin-name-must-be-kebab-case.json` should fail validation for condition `marketplace-plugin-name-kebab-case`."
+    },
+    {
+      "mappingId": "marketplace-plugin-name-kebab-case.good.basic",
+      "conditionId": "marketplace-plugin-name-kebab-case",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-plugin-name-kebab-case`."
+    },
+    {
+      "mappingId": "marketplace-plugins-array.bad.plugins-must-be-array",
+      "conditionId": "marketplace-plugins-array",
+      "assertionId": "bad.plugins-must-be-array",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/plugins-must-be-array.json",
+      "fixtureName": "plugins-must-be-array",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/plugins-must-be-array.json` should fail validation for condition `marketplace-plugins-array`."
+    },
+    {
+      "mappingId": "marketplace-plugins-array.good.basic",
+      "conditionId": "marketplace-plugins-array",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-plugins-array`."
+    },
+    {
+      "mappingId": "marketplace-relative-source-dot-slash.bad.plugin-source-must-start-dot-slash",
+      "conditionId": "marketplace-relative-source-dot-slash",
+      "assertionId": "bad.plugin-source-must-start-dot-slash",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/plugin-source-must-start-dot-slash.json",
+      "fixtureName": "plugin-source-must-start-dot-slash",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/plugin-source-must-start-dot-slash.json` should fail validation for condition `marketplace-relative-source-dot-slash`."
+    },
+    {
+      "mappingId": "marketplace-relative-source-dot-slash.good.basic",
+      "conditionId": "marketplace-relative-source-dot-slash",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-relative-source-dot-slash`."
+    },
+    {
+      "mappingId": "marketplace-top-level-additional-properties-rejected.bad.no-additional-top-level-properties",
+      "conditionId": "marketplace-top-level-additional-properties-rejected",
+      "assertionId": "bad.no-additional-top-level-properties",
+      "fixturePath": "fixtures/synthetic/fail/marketplace/no-additional-top-level-properties.json",
+      "fixtureName": "no-additional-top-level-properties",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/marketplace/no-additional-top-level-properties.json` should fail validation for condition `marketplace-top-level-additional-properties-rejected`."
+    },
+    {
+      "mappingId": "marketplace-top-level-additional-properties-rejected.good.basic",
+      "conditionId": "marketplace-top-level-additional-properties-rejected",
+      "assertionId": "good.basic",
+      "fixturePath": "fixtures/synthetic/pass/marketplace/basic.json",
+      "fixtureName": "basic",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/marketplace/basic.json` should validate for condition `marketplace-top-level-additional-properties-rejected`."
+    },
+    {
+      "mappingId": "plugin-complex-manifest-forms.good.official-ish",
+      "conditionId": "plugin-complex-manifest-forms",
+      "assertionId": "good.official-ish",
+      "fixturePath": "fixtures/synthetic/pass/plugin/official-ish.json",
+      "fixtureName": "official-ish",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/plugin/official-ish.json` should validate for condition `plugin-complex-manifest-forms`."
+    },
+    {
+      "mappingId": "plugin-component-path-dot-slash.bad.path-must-start-dot-slash",
+      "conditionId": "plugin-component-path-dot-slash",
+      "assertionId": "bad.path-must-start-dot-slash",
+      "fixturePath": "fixtures/synthetic/fail/plugin/path-must-start-dot-slash.json",
+      "fixtureName": "path-must-start-dot-slash",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/plugin/path-must-start-dot-slash.json` should fail validation for condition `plugin-component-path-dot-slash`."
+    },
+    {
+      "mappingId": "plugin-name-kebab-case.bad.name-must-be-kebab-case",
+      "conditionId": "plugin-name-kebab-case",
+      "assertionId": "bad.name-must-be-kebab-case",
+      "fixturePath": "fixtures/synthetic/fail/plugin/name-must-be-kebab-case.json",
+      "fixtureName": "name-must-be-kebab-case",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/plugin/name-must-be-kebab-case.json` should fail validation for condition `plugin-name-kebab-case`."
+    },
+    {
+      "mappingId": "plugin-name-kebab-case.good.minimal",
+      "conditionId": "plugin-name-kebab-case",
+      "assertionId": "good.minimal",
+      "fixturePath": "fixtures/synthetic/pass/plugin/minimal.json",
+      "fixtureName": "minimal",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/plugin/minimal.json` should validate for condition `plugin-name-kebab-case`."
+    },
+    {
+      "mappingId": "plugin-top-level-additional-properties-rejected.bad.no-additional-top-level-properties",
+      "conditionId": "plugin-top-level-additional-properties-rejected",
+      "assertionId": "bad.no-additional-top-level-properties",
+      "fixturePath": "fixtures/synthetic/fail/plugin/no-additional-top-level-properties.json",
+      "fixtureName": "no-additional-top-level-properties",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/plugin/no-additional-top-level-properties.json` should fail validation for condition `plugin-top-level-additional-properties-rejected`."
+    },
+    {
+      "mappingId": "plugin-top-level-additional-properties-rejected.good.minimal",
+      "conditionId": "plugin-top-level-additional-properties-rejected",
+      "assertionId": "good.minimal",
+      "fixturePath": "fixtures/synthetic/pass/plugin/minimal.json",
+      "fixtureName": "minimal",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/plugin/minimal.json` should validate for condition `plugin-top-level-additional-properties-rejected`."
+    },
+    {
+      "mappingId": "plugin-version-semver.bad.version-must-be-semver",
+      "conditionId": "plugin-version-semver",
+      "assertionId": "bad.version-must-be-semver",
+      "fixturePath": "fixtures/synthetic/fail/plugin/version-must-be-semver.json",
+      "fixtureName": "version-must-be-semver",
+      "role": "bad",
+      "expected": "fail",
+      "englishSentence": "Fixture `fixtures/synthetic/fail/plugin/version-must-be-semver.json` should fail validation for condition `plugin-version-semver`."
+    },
+    {
+      "mappingId": "plugin-version-semver.good.version-allows-prerelease-semver",
+      "conditionId": "plugin-version-semver",
+      "assertionId": "good.version-allows-prerelease-semver",
+      "fixturePath": "fixtures/synthetic/pass/plugin/version-allows-prerelease-semver.json",
+      "fixtureName": "version-allows-prerelease-semver",
+      "role": "good",
+      "expected": "pass",
+      "englishSentence": "Fixture `fixtures/synthetic/pass/plugin/version-allows-prerelease-semver.json` should validate for condition `plugin-version-semver`."
+    }
+  ]
+}

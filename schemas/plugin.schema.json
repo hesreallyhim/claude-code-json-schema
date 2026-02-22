@@ -110,6 +110,9 @@
           "$ref": "#/$defs/lspInline"
         }
       ]
+    },
+    "settings": {
+      "$ref": "#/$defs/pluginSettings"
     }
   },
   "$defs": {
@@ -183,6 +186,11 @@
           }
         }
       ]
+    },
+    "pluginSettings": {
+      "type": "object",
+      "description": "Plugin default settings applied when enabled. Current docs emphasize `agent`; unknown keys are tolerated by CLI.",
+      "additionalProperties": true
     },
     "hooksInline": {
       "type": "object",

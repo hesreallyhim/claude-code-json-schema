@@ -1,0 +1,9 @@
+{
+  "name": "settings-object-plugin",
+  "settings": {
+    "agent": "security-reviewer",
+    "unknownSetting": {
+      "enabled": true
+    }
+  }
+}

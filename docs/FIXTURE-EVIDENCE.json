@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-02-18",
+  "checkedAt": "2026-02-22",
   "purpose": "Machine-readable condition/fixture/assertion evidence map for schema behavior and observed Claude CLI behavior.",
   "terminology": {
     "condition": "A normative rule the schema encodes (required/permitted/disallowed).",
@@ -16,13 +16,17 @@
       "url": "https://code.claude.com/docs/en/plugins-reference",
       "snapshot": "official-docs/code.claude.com_docs_en_plugins-reference.md.txt"
     },
+    "pluginsGuide": {
+      "url": "https://code.claude.com/docs/en/plugins",
+      "snapshot": "official-docs/code.claude.com_docs_en_plugins.md.txt"
+    },
     "pluginMarketplaces": {
       "url": "https://code.claude.com/docs/en/plugin-marketplaces",
       "snapshot": "official-docs/code.claude.com_docs_en_plugin-marketplaces.md.txt"
     },
     "cliRun": {
-      "checkedAt": "2026-02-18",
-      "cliVersion": "2.1.44 (Claude Code)",
+      "checkedAt": "2026-02-22",
+      "cliVersion": "2.1.50 (Claude Code)",
       "command": "node tools/validate-fixtures-claude.mjs"
     }
   },
@@ -157,6 +161,64 @@
         {
           "ref": "pluginsReference",
           "note": "Manifest sections document these field families and component path fields."
+        }
+      ]
+    },
+    {
+      "id": "plugin-settings-object",
+      "kind": "plugin",
+      "condition": "Top-level plugin `settings` is allowed and must be an object when present.",
+      "classification": "documented",
+      "assertionCoverage": "paired",
+      "assertions": [
+        {
+          "fixture": "fixtures/synthetic/pass/plugin/settings-object.json",
+          "role": "good",
+          "expected": "pass",
+          "observedCli": "pass"
+        },
+        {
+          "fixture": "fixtures/synthetic/fail/plugin/settings-must-be-object.json",
+          "role": "bad",
+          "expected": "fail",
+          "observedCli": "fail"
+        }
+      ],
+      "cliEnforcementCode": 0,
+      "notes": "CLI accepts object settings and rejects non-object settings.",
+      "evidence": [
+        {
+          "ref": "pluginsGuide",
+          "note": "Plugins guide documents `settings.json` and states precedence over `settings` in `plugin.json`."
+        }
+      ]
+    },
+    {
+      "id": "marketplace-plugin-settings-object",
+      "kind": "marketplace",
+      "condition": "Marketplace plugin-entry `settings` is allowed and must be an object when present.",
+      "classification": "documented",
+      "assertionCoverage": "paired",
+      "assertions": [
+        {
+          "fixture": "fixtures/synthetic/pass/marketplace/plugin-settings-object.json",
+          "role": "good",
+          "expected": "pass",
+          "observedCli": "pass"
+        },
+        {
+          "fixture": "fixtures/synthetic/fail/marketplace/plugin-settings-must-be-object.json",
+          "role": "bad",
+          "expected": "fail",
+          "observedCli": "fail"
+        }
+      ],
+      "cliEnforcementCode": 0,
+      "notes": "CLI accepts object settings and rejects non-object settings in marketplace plugin entries.",
+      "evidence": [
+        {
+          "ref": "pluginMarketplaces",
+          "note": "Marketplace docs allow plugin entries to include plugin manifest fields."
         }
       ]
     },

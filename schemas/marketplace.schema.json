@@ -256,6 +256,11 @@
         }
       ]
     },
+    "pluginSettings": {
+      "type": "object",
+      "description": "Plugin default settings applied when enabled.",
+      "additionalProperties": true
+    },
     "pluginEntry": {
       "type": "object",
       "additionalProperties": false,
@@ -334,6 +339,9 @@
         },
         "lspServers": {
           "$ref": "#/$defs/pathOrObject"
+        },
+        "settings": {
+          "$ref": "#/$defs/pluginSettings"
         }
       }
     }

@@ -1,0 +1,16 @@
+{
+  "name": "my-plugins",
+  "owner": {
+    "name": "Plugin Team"
+  },
+  "plugins": [
+    {
+      "name": "review-plugin",
+      "source": "./plugins/review-plugin",
+      "settings": {
+        "agent": "security-reviewer",
+        "unknownSetting": true
+      }
+    }
+  ]
+}

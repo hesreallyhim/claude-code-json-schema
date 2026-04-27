@@ -1,4 +1,17 @@
-# claude-code-json-schema
+# ~~claude-code-json-schema~~
+
+## WE DID IT!<sup>*</sup>
+
+I'm archiving this project for now because official schemas have finally been published:
+
+- https://www.schemastore.org/claude-code-plugin-manifest.json (added [here](https://www.schemastore.org/claude-code-plugin-manifest.json))
+- https://www.schemastore.org/claude-code-marketplace.json
+
+That's very nice of them to do this and I trust that they will make sure to keep them up to date.
+
+<sub><sup>*</sup>This is just tongue-in-cheek - I have to say that because people seem to get the wrong idea. I don't think this repo had any impact on what they do over there.<sub>
+
+---
 
 Unofficial but really actually quite good JSON Schemas for Claude Code manifest files like `plugin.json` and `marketplace.json`. Intended to support developer tooling, plugin authors, and IDE integrations.
 
